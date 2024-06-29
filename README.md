@@ -53,14 +53,14 @@ MARKLOGIC_DATABASE=replace_database_name
 ```
 
 
-##### Run Backend Server:
+#### Run Backend Server:
 ```
 cd backend
 npm install
 npm run serve
 ```
 
-##### Run Frontent Server:
+#### Run Frontent Server:
 ```
 cd frontend
 echo "REACT_APP_BACKEND_URL=http://localhost:3001" > .env
@@ -70,8 +70,8 @@ npm install -g serve
 serve -s build
 ```
 
-##### Access the app:
+#### Access the app:
 Visit [localhost:3000](http://localhost:3000) or whatever host you deployed to.
 
-#### Screenshot:
+### Screenshot:
 ![sc](./assets/sc.png)
