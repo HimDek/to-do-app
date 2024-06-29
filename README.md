@@ -13,7 +13,7 @@ A Simple To Do List App where users can:
     * Takes care of conversion of data between XML format for database and JSON format for frontend
     * Create API endpoints for creation, renaming, deletion of lists and tasks as well as for marking tasks as complete or incomplete
 * [React](https://react.dev/) to build the frontend
-    * Sends request to backend endpoints and handles the responce as well as user input events
+    * Sends request to backend endpoints based on user input events and handles the responce
     * Conditional Rendering of To Do Lists and Task components
     * Styling with CSS for great visual design
 
