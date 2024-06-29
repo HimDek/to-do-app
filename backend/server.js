@@ -16,7 +16,7 @@ const db = marklogic.createDatabaseClient({
 
 // CORS configuration
 const corsOptions = {
-    origin: process.env.FRONTEND_URL || "http://localhost:3001",
+    origin: process.env.FRONTEND_URL || "http://localhost:3000",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
 };
@@ -251,7 +251,7 @@ app.put('/lists/:listId/tasks/:taskId', (req, res) => {
         });
 });
 
-const port = process.env.BACKEND_PORT || 3000;
+const port = process.env.BACKEND_PORT || 3001;
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });

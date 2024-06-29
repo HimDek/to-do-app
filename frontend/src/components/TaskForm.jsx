@@ -20,14 +20,15 @@ const TaskForm = ({ listId, addTask }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="create-task d-flex align-items-center">
+        <form onSubmit={handleSubmit} className="d-flex align-items-center gap-2">
             <input
+                className="input input-accent"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="New Task"
             />
-            <button className="btn" type="submit">Add Task</button>
+            <button className="btn btn-accent" type="submit">Add Task</button>
         </form>
     );
 };

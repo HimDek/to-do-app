@@ -1,14 +1,10 @@
 // Example using Routes in React Router v6
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Lists from './Lists';
+import Lists from './components/Lists';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Lists />} />
-      </Routes>
-    </Router>
+    <Lists />
   );
 }
 

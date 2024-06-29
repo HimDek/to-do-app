@@ -17,14 +17,15 @@ const ListForm = ({ createList }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="create-list d-flex align-items-center">
+        <form onSubmit={handleSubmit} className="d-flex align-items-center gap-2">
             <input
+                className="input input-accent lead"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Enter list name"
+                placeholder="Enter new list name"
             />
-            <button className="btn" type="submit">Create List</button>
+            <button className="btn btn-accent lead" type="submit">Create List</button>
         </form>
     );
 };

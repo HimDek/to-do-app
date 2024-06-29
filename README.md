@@ -41,8 +41,8 @@ Replace values as necessary or according to your database setup
 ```
 cd to-do-app
 echo "
-FRONTEND_URL=http://localhost:3001
-BACKEND_PORT=3000
+FRONTEND_URL=http://localhost:3000
+BACKEND_PORT=3001
 MARKLOGIC_USER=replace_user_name
 MARKLOGIC_PASSWORD=replace_password
 MARKLOGIC_HOST=localhost
@@ -63,13 +63,15 @@ npm run serve
 ##### Run Frontent Server:
 ```
 cd frontend
-echo "REACT_APP_BACKEND_URL=http://localhost:3000" > .env
+echo "REACT_APP_BACKEND_URL=http://localhost:3001" > .env
 npm install
-npm start
+npm run build
+npm install -g serve
+serve -s build
 ```
 
 ##### Access the app:
-Visit [localhost:3001](http://localhost:3001) or whatever host you deployed to.
+Visit [localhost:3000](http://localhost:3000) or whatever host you deployed to.
 
 #### Screenshot:
 ![sc](./assets/sc.png)

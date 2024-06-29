@@ -38,9 +38,9 @@ const List = ({ listId, listName, tasks, deleteList }) => {
 
     return (
         <li key={listId} className="list">
-            <div className="list-name d-flex align-items-center">
-                <input type="text" placeholder="Enter list name" value={listCurrentName} onChange={handleListNameChange} />
-                <button className="btn btn-danger" onClick={() => deleteList(listId)}>Delete</button>
+            <div className="list-name d-flex align-items-center gap-2">
+                <input className="input input-accent lead" type="text" placeholder="Enter list name" value={listCurrentName} onChange={handleListNameChange} />
+                <button className="btn btn-danger lead" onClick={() => deleteList(listId)}>Delete</button>
             </div>
             <Tasks listId={listId} tasks={tasks} />
         </li>

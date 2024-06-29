@@ -54,14 +54,14 @@ const Task = ({ listId, taskId, taskName, taskCompleted, deleteTask }) => {
     }
 
     return (
-        <li key={taskId} className="task d-flex align-items-center">
+        <li key={taskId} className="task d-flex align-items-center gap-2">
             <input
                 className="check-input" 
                 type="checkbox"
                 checked={taskCurrentCompleted}
                 onChange={() => taskCurrentCompleted ? markIncomplete(listId, taskId) : markComplete(listId, taskId)}
             />
-            <input type="text" placeholder="Task" value={taskCurrentName} onChange={handleTaskNameChange} />
+            <input className={taskCurrentCompleted ? "input input-success fw-bold" : "input input-danger fw-bold"} type="text" placeholder="Task" value={taskCurrentName} onChange={handleTaskNameChange} />
             <button className="btn btn-danger" onClick={() => deleteTask(listId, taskId)}>Delete</button>
         </li>
     );
