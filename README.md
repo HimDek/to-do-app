@@ -5,6 +5,18 @@ A Simple To Do List App where users can:
 * Add, Remove or Rename Tasks
 * Mark tasks as Complete or Incomplete
 
+### Tech Stack:
+
+* [MarkLogic Server](https://developer.marklogic.com/products/marklogic-server) as database
+    * To store data in XML format
+* [Express.js](https://expressjs.com/) in [Node JS](https://nodejs.org/) as backend
+    * Takes care of conversion of data between XML format for database and JSON format for frontend
+    * Create API endpoints for creation, renaming, deletion of lists and tasks as well as for marking tasks as complete or incomplete
+* [React](https://react.dev/) to build the frontend
+    * Sends request to backend endpoints and handles the responce as well as user input events
+    * Conditional Rendering of To Do Lists and Task components
+    * Styling with CSS for great visual design
+
 ---
 ##### **MainFlow Services and Technologies**
 ###  Web Development Internship Task 4
