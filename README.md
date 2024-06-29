@@ -19,7 +19,7 @@ A Simple To Do List App where users can:
 
 ---
 ##### **MainFlow Services and Technologies**
-###  Web Development Internship Task 4
+### Full Stack Web Development Internship Task 4
 
 **Description:** Develop a simple to-do list
 application where users can add tasks, mark tasks
