@@ -63,6 +63,7 @@ MARKLOGIC_AUTH_TYPE=digest
 MARKLOGIC_DATABASE=replace_database_name
 " > .env
 ```
+Make sure variables from `.env` are loaded into your environment.
 
 
 #### Run Backend Server:
@@ -72,7 +73,7 @@ npm install
 npm run serve
 ```
 
-#### Run Frontent Server:
+#### Run Frontend Server:
 ```
 cd frontend
 echo "REACT_APP_BACKEND_URL=http://localhost:3001" > .env
