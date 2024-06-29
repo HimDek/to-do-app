@@ -9,7 +9,7 @@ A Simple To Do List App where users can:
 
 * [MarkLogic Server](https://developer.marklogic.com/products/marklogic-server) as database
     * To store data in XML format
-* [Express.js](https://expressjs.com/) in [Node JS](https://nodejs.org/) as backend
+* [Express.js](https://expressjs.com/) in [Node.js](https://nodejs.org/) as backend
     * Takes care of conversion of data between XML format for database and JSON format for frontend
     * Create API endpoints for creation, renaming, deletion of lists and tasks as well as for marking tasks as complete or incomplete
 * [React](https://react.dev/) to build the frontend
